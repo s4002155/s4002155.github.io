@@ -1,49 +1,49 @@
 * {
-    color: hotpink;
+    text-align: center;
 }
-
-body {
-    text-align:center;
-    border: 4px solid chocolate;
-}
-
-/* my brand color is lime hence I made h1 as lime  */
-
-
-/* Reasoning for styling of this page is as follow:
-1) my brand used this color
-2) all my paragraphs are single spaced with font size */
 
 h1 {
-    color: lime;
-    border: 2px solid black;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 10px;
+    color: #162c3a;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul {
+    line-height: ;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: #dba988;
 }
 
-p,
-h1 {
-    color:blueviolet;
+h2 {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #d97c50;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-li {
-    color: black;
+p{
+    line-height: 1.4;
+    padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
-li strong {
-    color:black
+a:hover {
+    color: purple
 }
 
-/* .my-colors {
-    color:crimson
-} */
-
-#instructor {
-    color:purple
-}
-
-/* #last-para {
-    color: yellowgreen
-} */
-
-[data-email="email"] {
-    color: blue
+a :visited {
+    color: green
 }

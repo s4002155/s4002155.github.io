@@ -3,11 +3,11 @@
 body {
     background-color: #1a120b;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     margin: auto;
     max-width: 1000px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;

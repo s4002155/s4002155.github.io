@@ -3,46 +3,40 @@ body {
     /* display: flex; */
     text-align: center;
     margin: auto;
+    padding-left: 30px;
     max-width: 1000px;
     justify-content: center;
     align-items: center;
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     /* color: #e5e5cb; */
     color: #3c2a21;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
-
+  
+header {
+    padding-right: 30px;
+}
 
   h1 {
+    background-color: #304269;
+    width: 945px;
+    margin: auto;
     font-size: 2rem;
     text-align: center;
-    margin: auto;
     max-width: 1000px;
-    justify-content: center ;
-    align-items: flex-start;
-    padding: 1rem;
-  } 
-
-  .outer {
-    border: 2px dashed #e5e5cb;
-    width: 400px;
-    min-height: 200px;
-    /* height: 200px; */
-    /* line-height: 120px; */
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start ;
     align-items: center;
-    gap: 1rem;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-  }
+    padding: 2rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  } 
 
   #grid-container {
     border: 0px dashed black;
-    margin: px;
+    margin: auto;
     width: 1000px;
     height: 1000px;
     padding: 0px;
@@ -54,7 +48,7 @@ body {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: repeat(4, 1fr); */ */
+    /* grid-template-rows: repeat(4, 1fr); */
   }
   
   #grid-container > * {
@@ -80,14 +74,33 @@ body {
     padding-right: 10px;
     text-align: left;
   }
+
+  .question1 > img {
+    /* align-self: center;
+    justify-self: center;
+    object-fit: cover; */
+    padding-left: 10px;
+    width: 80%;
+    height: 100%;
+  }
+
   #box2 {
-    background-color: purple;
+    /* background-color: purple; */
     grid-column: 8/15;
     grid-row: 1/7;
   }
+
+  .question2 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+  }
+
   #box3 {
-    background-color: aquamarine;
-    grid-column: 10/18;
+    /* background-color: aquamarine; */
+    grid-column: 13/18;
     grid-row: 7/12;
   }
   #box4 {
@@ -103,10 +116,19 @@ body {
     text-align: right;
   }
   #box5 {
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-column: 1/10;
     grid-row: 17/25;
   }
+
+  .question3 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* object-fit: cover; */
+    width: 68%;
+    height: 100%;
+  }
+
   #box6 {
     /* background-color: hotpink; */
     grid-column: 1/17;
@@ -118,11 +140,15 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
 li {
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #grid-container2 {
@@ -139,8 +165,8 @@ li {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: repeat(4, 1fr); */ */
-  }
+    /* grid-template-rows: repeat(4, 1fr); */
+}
   
   #grid-container2 > * {
     width: 100%;
@@ -153,13 +179,21 @@ li {
   }
 
 #box7 {
- background-color: hotpink;
- grid-column: 1/9;
+ /* background-color: hotpink; */
+ grid-column: 4/9;
  grid-row: 1/8;
  display: flex;
  justify-content: center;
  align-items: center;
 }
+
+.question4 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* object-fit: cover; */
+    width: 94%;
+    height: 100%;
+  }
 
 #box8 {
    /* background-color: hotpink; */
@@ -175,13 +209,21 @@ li {
 }
 
 #box9 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     grid-column: 1/9;
-    grid-row: 8/17;
+    grid-row: 4/17;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.question5 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* object-fit: cover; */
+    width: 50%;
+    height: 100%;
+  }
 
 #box10{
    /* background-color: hotpink; */
@@ -210,7 +252,7 @@ li {
 }
 
 #box12 {
-    background-color: gold;
+    /* background-color: gold; */
     height: 100px;
     grid-column: 8/18;
     grid-row: 26/30;
@@ -219,15 +261,33 @@ li {
     align-items: center;   
 }
 
+.question6 > img {
+    align-self: center;
+    justify-content: flex-end;
+    padding-left: 5px;
+    /* object-fit: cover; */
+    width: 60%;
+    height: 100%;
+  }
+
 #box13 {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 120px;
-    grid-column: 8/18;
-    grid-row: 30/34;
+    grid-column: 10/18;
+    grid-row: 29/34;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
+
+.question7 > img {
+    align-self: center;
+    justify-content: flex-end;
+    padding-left: 5px;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+  }
 
 #box14 {
     /* background-color: gold; */
@@ -243,13 +303,22 @@ li {
 }
 
 #box15 {
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     grid-column: 1/8;
-    grid-row: 44/55;
+    grid-row: 45/57;
     display: flex;
     justify-content: center;
     align-items: center;   
 }
+
+.question8 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* padding-left: 30px; */
+    /* object-fit: cover; */
+    width: 65%;
+    height: 100%;
+  }
 
 #box16 {
     /* background-color: gold; */
@@ -279,7 +348,7 @@ li {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: repeat(4, 1fr); */ */
+    /* grid-template-rows: repeat(4, 1fr); */
   }
   
   #grid-container3 > * {
@@ -293,13 +362,22 @@ li {
   }
 
 #box17 {
-    background-color: royalblue;
-    grid-column: 1/17;
+    /* background-color: royalblue; */
+    grid-column: 1/16;
     grid-row: 1/9;
     display: flex;
     justify-content: center;
     align-items: center;   
 }
+
+.question9 > img {
+    align-self: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+  }
 
 #box18 {
     /* background-color: gold; */
@@ -316,13 +394,23 @@ li {
 }
 
 #box19 {
-    background-color: red;
+    /* background-color: red; */
     grid-column: 1/8;
     grid-row: 15/23;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.question10 > img {
+    align-self: center;
+    justify-content: flex-end;
+
+    /* object-fit: cover; */
+    width: 99%;
+    height: 100%;
+  }
+
 
 #box20 {
     /* background-color: gold; */
@@ -351,18 +439,27 @@ li {
 }
 
 #box22 {
-    background-color: teal;
+    /* background-color: teal; */
     grid-column: 7/16;
-    grid-row: 26/38;
+    grid-row: 25/38;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.question11 > img {
+    align-self: center;
+    justify-content: flex-end;
+    padding-left: 5px;
+    /* object-fit: cover; */
+    width: 70%;
+    height: 100%;
+  }
+
 #box23 {
-    background-color: tan;
+    /* background-color: tan; */
     grid-column: 8/18;
-    grid-row: 39/49;
+    grid-row: 37/49;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +479,7 @@ li {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: repeat(4, 1fr); */ */
+    /* grid-template-rows: repeat(4, 1fr); */
   }
   
   #grid-container4 > * {
@@ -409,13 +506,21 @@ li {
 }
 
 #box25 {
-    background-color: tomato;
+    /* background-color: tomato; */
     grid-column: 1/12;
-    grid-row: 9/16;
+    grid-row: 6/16;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.question13 > img {
+    align-self: center;
+    justify-content: flex-end;
+    /* object-fit: cover; */
+    width: 80%;
+    height: 100%;
+  }
 
 #box26 {
     /* background-color: gold; */

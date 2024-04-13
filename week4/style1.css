@@ -43,7 +43,7 @@ body {
   
   #grid-container {
     border: 2px dashed #e5e5cb;
-    margin: 50px 0;
+    margin: 50px;
     width: 500px;
     height: 500px;
     padding: 10px;

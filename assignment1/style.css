@@ -1,37 +1,67 @@
+/* Color Theme Swatches in Hex
+.Corporate-Orange--Blue-1-hex { color: #304269; }
+.Corporate-Orange--Blue-2-hex { color: #F26101; } 
+.Corporate-Orange--Blue-3-hex { color: #FFFFFF; }
+*/
+/* MyongAe Kim's homepage was designed using white and black as the main colors, but the object elements were accented with red and green that fit the Christmas color theme. However, since my web page has nothing to do with Christmas, while considering the accent colors to be used, I chose to use orange and blue. Because orange and blue are complementary colors, like red and green, there is an effect that can be emphasized through complementary colors while responding in a similar way to MyongAe Kim's homepage design elements. */
+
+
+
 body {
     background-color: whitesmoke;
+    color: black;
+/* In order to respond to MyoungAe Kim's work in terms of design as well, I paid attention to the design elements that MyoungAe Kim used on her website. She designed a clean and intuitive interface using white and black as the main colours. To continue this, I also used white and black for the basic elements used in the response to give a clean impression. */
     text-align: center;
     margin: auto;
     padding-left: 30px;
     max-width: 1000px;
     justify-content: center;
     align-items: center;
-    color: black;
     font-size: 1.05rem;
     font-family: "Roboto", sans-serif;
+    /* For readability, the text uses a sans-serif font called 'Roboto'. */
     font-weight: 300;
     font-style: normal;
   }
   
 header {
     padding-right: 30px;
+    /* Padding was used to solve the problem of the body and header not being connected. */
 }
 
   h1 {
     background-color: #304269;
+    /* Among the Color Theme Swatches decision, I decided to use color #304269 for the heading. I believe that the heading is an important space that determines the first impression and determines the concept of the web page. That's why I decided to use #304269, which can be appropriately emphasized rather than a color that is too eye-catching. In order to maintain the concept that the heading is also placed in a box, the box was constructed using the color #304269 as the background color. */
     width: 945px;
     margin: auto;
-    font-size: 2rem;
-    text-align: center;
+    padding: 2rem;
     max-width: 1000px;
     justify-content: flex-start ;
     align-items: center;
-    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
     font-family: "Abril Fatface", serif;
+    /* 'Abril Fatface' was used in the heading to use a font that can be emphasized through thickness. */
     font-weight: 400;
     font-style: normal;
   } 
 
+  h3 {
+    text-align: start;
+  }
+
+    a {
+    color: #f26101;
+    /* Since this is a space that indicates which website it is responding to, it was emphasized using the point color #F26101. */
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    }
+
+
+
+/* The columns and rows of the grid were configured using #grid-container, and the overall size of the grid was adjusted. */
   #grid-container {
     margin: auto;
     width: 1000px;
@@ -49,84 +79,7 @@ header {
     justify-self: center;
   }
 
-  #box1 {
-    border: 1.2px black;
-    grid-column: 1/8;
-    grid-row: 1/15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-  }
-
-  .question1 > img {
-    padding-left: 10px;
-    width: 80%;
-    height: 100%;
-  }
-
-  #box2 {
-    grid-column: 8/15;
-    grid-row: 1/7;
-  }
-
-  .question2 > img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #box3 {
-    grid-column: 13/18;
-    grid-row: 7/12;
-  }
-
-  #box4 {
-    grid-column: 10/18;
-    grid-row: 12/23;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;
-  }
-
-  #box5 {
-    grid-column: 1/10;
-    grid-row: 17/25;
-  }
-
-  .question3 > img {
-    width: 68%;
-    height: 100%;
-  }
-
-  #box6 {
-    grid-column: 1/17;
-    grid-row: 25/54;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-li {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-#grid-container2 {
+  #grid-container2 {
     margin: auto;
     width: 1000px;
     height: 1000px;
@@ -143,137 +96,7 @@ li {
     justify-self: center;
   }
 
-#box7 {
- grid-column: 4/9;
- grid-row: 1/8;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.question4 > img {
-    width: 94%;
-    height: 100%;
-  }
-
-#box8 {
-   grid-column: 9/18;
-   grid-row: 1/16;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: 1.2px solid black;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-align: center;
-}
-
-#box9 {
-    grid-column: 1/9;
-    grid-row: 4/17;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.question5 > img {
-    width: 50%;
-    height: 100%;
-  }
-
-#box10{
-   grid-column: 1/17;
-   grid-row: 17/25;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: 1.2px solid black;
-   padding-left: 10px;
-   padding-right: 10px;
-   text-align: left;
-}
-
-#box11 {
-    grid-column: 1/8;
-    grid-row:26/44;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-}
-
-#box12 {
-    height: 100px;
-    grid-column: 8/18;
-    grid-row: 26/30;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.question6 > img {
-    padding-left: 5px;
-    width: 60%;
-    height: 100%;
-  }
-
-#box13 {
-    height: 120px;
-    grid-column: 10/18;
-    grid-row: 29/34;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.question7 > img {
-    padding-left: 5px;
-    width: 100%;
-    height: 100%;
-  }
-
-#box14 {
-    grid-column: 9/18;
-    grid-row: 34/49;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;  
-}
-
-#box15 {
-    grid-column: 1/8;
-    grid-row: 45/57;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.question8 > img {
-    width: 65%;
-    height: 100%;
-  }
-
-#box16 {
-    grid-column: 6/18;
-    grid-row: 50/57;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;  
-    height: 130px;
-}
-
-#grid-container3 {
+  #grid-container3 {
     margin: auto;
     width: 1000px;
     height: 1000px;
@@ -290,93 +113,7 @@ li {
     justify-self: center;
   }
 
-#box17 {
-    grid-column: 1/16;
-    grid-row: 1/9;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.question9 > img {
-    padding-bottom: 30px;
-    width: 100%;
-    height: 100%;
-  }
-
-#box18 {
-    grid-column: 1/15;
-    grid-row: 5/15 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;  
-}
-
-#box19 {
-    grid-column: 1/8;
-    grid-row: 15/23;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.question10 > img {
-    width: 99%;
-    height: 100%;
-  }
-
-
-#box20 {
-    grid-column: 8/18;
-    grid-row: 16/26 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;  
-}
-
-#box21 {
-    grid-column: 1/7;
-    grid-row: 24/48 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;  
-}
-
-#box22 {
-    grid-column: 7/16;
-    grid-row: 25/38;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.question11 > img {
-    padding-left: 5px;
-    width: 70%;
-    height: 100%;
-  }
-
-#box23 {
-    grid-column: 8/18;
-    grid-row: 37/49;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#grid-container4 {
+  #grid-container4 {
     margin: auto;
     width: 1000px;
     height: 1000px;
@@ -393,15 +130,247 @@ li {
     justify-self: center;
   }
 
-  #box24 {
-    grid-column: 8/18;
-    grid-row: 1/14 ;
+
+  /* The grid arrangement was adjusted through #box<number>. */
+  #box1 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 1/8;
+    grid-row: 1/15;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  #box2 {
+    grid-column: 8/15;
+    grid-row: 1/7;
+  }
+
+  #box3 {
+    grid-column: 13/18;
+    grid-row: 7/12;
+  }
+
+  #box4 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 10/18;
+    grid-row: 12/23;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+
+  #box5 {
+    grid-column: 1/10;
+    grid-row: 17/25;
+  }
+
+  #box6 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 1/17;
+    grid-row: 25/54;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+/* Box6 contains a list of each of discrete actions. Since I analyzed the website by dividing it into left and right parts, I specified font-weights for 'box6' and 'li' respectively to differentiate between the left and right parts of the website. */
+li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#box7 {
+  grid-column: 4/9;
+  grid-row: 1/8;
+  display: flex;
+  align-items: center;
+}
+
+#box8 {
+   background-color: white;
+   align-items: center;
+   border: 1.2px solid black;
+   grid-column: 9/18;
+   grid-row: 1/16;
+   padding-left: 10px;
+   padding-right: 10px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+#box9 {
+    grid-column: 1/9;
+    grid-row: 4/17;
+}
+
+#box10{
+   background-color: white;
+   border: 1.2px solid black;
+   grid-column: 1/17;
+   grid-row: 17/25;
+   padding-left: 10px;
+   padding-right: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#box11 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 1/8;
+    grid-row:26/44;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;   
+    text-align: left;
+}
+
+#box12 {
+    height: 100px;
+    grid-column: 8/18;
+    grid-row: 26/30;
+}
+
+#box13 {
+    height: 120px;
+    grid-column: 10/18;
+    grid-row: 29/34;
+}
+
+#box14 {
+    background-color: white;
     border: 1.2px solid black;
+    grid-column: 9/18;
+    grid-row: 34/49;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: right;  
+}
+
+#box15 {
+    grid-column: 1/8;
+    grid-row: 45/57;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+#box16 {
+    background-color: white;
+    border: 1.2px solid black;
+    height: 130px;
+    grid-column: 6/18;
+    grid-row: 50/57;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: right;  
+}
+
+#box17 {
+    grid-column: 1/16;
+    grid-row: 1/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+#box18 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 1/15;
+    grid-row: 5/15 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: left;  
+}
+
+#box19 {
+    grid-column: 1/8;
+    grid-row: 15/23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box20 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 8/18;
+    grid-row: 16/26 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: right;  
+}
+
+#box21 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 1/7;
+    grid-row: 24/48 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: left;  
+}
+
+#box22 {
+    grid-column: 7/16;
+    grid-row: 25/38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box23 {
+    grid-column: 8/18;
+    grid-row: 37/49;
+}
+
+  #box24 {
+    background-color: white;
+    border: 1.2px solid black;
+    grid-column: 8/18;
+    grid-row: 1/14 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     text-align: right;  
 }
 
@@ -413,19 +382,81 @@ li {
     align-items: center;
 }
 
-.question13 > img {
-    width: 80%;
-    height: 100%;
-  }
-
 #box26 {
+    background-color: white;
+    border: 1.2px solid black;
     grid-column: 1/18;
     grid-row: 16/24 ;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;   
-    border: 1.2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;  
+}
+
+/* When I wrote the question, I thought it would be good if it was not just composed as text, but also as a design element. So, I decided to organize the words I wanted to emphasize by making them larger in size and in different colors along with arrow icons. To achieve this, rather than adding the title as text, I created it as a graphic and inserted an image. The image size was adjusted by setting the img tag and class to each image. */
+.question1 > img {
+  padding-left: 10px;
+  width: 80%;
+  height: 100%;
+}
+
+.question2 > img {
+  width: 100%;
+  height: 100%;
+}
+
+.question3 > img {
+  width: 68%;
+  height: 100%;
+}
+
+.question4 > img {
+  width: 94%;
+  height: 100%;
+}
+
+.question5 > img {
+  width: 50%;
+  height: 100%;
+}
+
+.question6 > img {
+  padding-left: 5px;
+  width: 60%;
+  height: 100%;
+}
+
+.question7 > img {
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.question8 > img {
+  width: 65%;
+  height: 100%;
+}
+
+.question9 > img {
+  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.question10 > img {
+  width: 99%;
+  height: 100%;
+}
+
+.question11 > img {
+  padding-left: 5px;
+  width: 70%;
+  height: 100%;
+}
+
+.question13 > img {
+  width: 80%;
+  height: 100%;
 }

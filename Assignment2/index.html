@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <p class="scroll"  id="header1">Scroll through to check out the playlist!</p>
+        <p class="select" id="header2">Select music with horizontal scrolling and click the music you want to play</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+          <li><a href="#header1">Home</a></li>
+          <li><a href="#header2">Playlists</a></li>
+          <li><a href="#progress-bar">Music</a></li>
+        </ul>
+      </nav>
+
+    <!-- Home Section -->
+    <div id="filler"></div>
+
+    <div id="container">
+      <div id="one"><img src="Album.png"></div>
+      <div id="two"><img src="Hes LP.png"></div>
+    </div>
+    
+    <!-- Main Content Section -->
+    <main id="three">
+      <!-- Playlist Section -->
+    <section class="grid-item">
+        <div class="items" id="slider">
+          <div class="item item1">
+            <img src="Water LP.png" alt="Image 4">
+          </div>
+          <div class="item item2">
+            <img src="Hes LP.png" alt="Image 1">
+          </div>
+          <div class="item item3">
+            <img src="Dry LP.png" alt="Image 2">
+          </div>
+          <div class="item item4">
+            <img src="Leapt.png" alt="Image 3">
+          </div>
+          <div class="item item1">
+            <img src="Water LP.png" alt="Image 4">
+          </div>
+          <div class="item item2">
+            <img src="Hes LP.png" alt="Image 1">
+          </div>
+          <div class="item item3">
+            <img src="Dry LP.png" alt="Image 2">
+          </div>
+        </div>
+     </section>
+      <!-- Music Section -->
+     <section>
+        <div class="song-title"></div>
+        <div class="album-art"></div>
+     </section>
+     
+      <section class="progress-bar-container">
+        <div id="progress-bar" style="display: none;">
+            <div id="progress-bar-fill"></div>
+        </div>
+      </section>
+        <!-- Audio Controls Buttons -->
+      <section class="audio-controls" style="display: none;">
+        <button id="skip-to-start-button">
+            <img
+              id="skip-img"
+              src="https://img.icons8.com/?size=100&id=YTSDoX6z463S&format=png&color=000000"
+              alt="Skip to start button"
+              width="34"
+              height="34"
+            />
+          </button>
+        <button id="rewind-button">
+            <img
+              id="rewind-img"
+              src="https://img.icons8.com/?size=100&id=91480&format=png&color=000000"
+              alt="Rewind button"
+              width="34"
+              height="34"
+            />
+        </button>
+        <button id="play-pause-button">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/?size=100&id=TlSnjmNzYgKT&format=png&color=000000"
+              alt="Play Button"
+              width="34"
+              height="34"
+            />
+          </button>
+          <button id="fast-forward-button">
+            <img
+              id="fast-forward-img"
+              src="https://img.icons8.com/?size=100&id=91476&format=png&color=000000"
+              alt="Fast Forward button"
+              width="34"
+              height="34"
+            />
+        </button>
+          <button id="end-button">
+            <img
+              id="end-img"
+              src="https://img.icons8.com/?size=100&id=9m6KWcXqAqBT&format=png&color=000000"
+              alt="End button"
+              width="34"
+              height="34"
+            />
+          </button>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Music Album Player Website. All rights reserved.</p>
+        Media Controls Icon by <a href="https://icons8.com">Icon8</a>
+    </footer>
+</body>
+</html>

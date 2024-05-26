@@ -1,0 +1,326 @@
+/* Because various colors were used in music albums and LPs, the background and text colors of the media player website used achromatic colors to highlight music album objects. */
+:root {
+  --primary-bg-color: #eaeaea;
+  --text-color: #262223;
+  --main-bg-color: #eaeaea;
+  --main-pb-bg-color: #262223;
+  --main-btn-bg-color: #eaeaea;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  overflow-y: scroll; 
+  /* Since this website only uses vertical scrolling, excluding horizontal scrolling of the playlist, overflow-x is set to hidden to prevent unnecessary scrolling confusion. */
+  overflow-x: hidden;
+  height: 1900px;
+}
+
+/* Header styling */
+.scroll {
+    /* The header font plays an important role in determining the overall atmosphere of the web page. The header displayed along with the music album cover uses a handwriting-like font to match the mood of the music album cover, which uses a letter collage concept. */
+    font-family: "Rock Salt", cursive; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+.select {
+    font-family: "Montserrat", sans-serif;
+    /* The second header should explain how the playlist works. That is why I used a sans-serif font that is easy to read. */
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 75%;
+}
+
+/* Navigation styling */
+  nav {
+    font-family: "Montserrat", sans-serif;
+    /* The navigation, also used the Montserrat font for readability. */
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    /* This webpage allows scrolling. This causes the navigation to disappear when the page is scrolled. To solve this, I placed it in a fixed position in the viewport using 'position: fixed;' and adjusted the position through settings such as 'top', 'left', and 'transform'. */
+    position: fixed;
+    top: 20px;
+    left: 90%;
+    transform: translateX(-50%);
+    z-index: 999; /* On my website, I display a variety of image content layered together. Due to this, I set it to a high value to prevent the problem of navigation buttons being obscured by images and not being clicked. */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+/* Home section styling*/
+#filler {
+    height: 100vh;
+    width: 100%;
+    display: none;
+  }
+  
+  #container {
+    position: fixed;
+    top: -1%;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #container div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* To place images overlapping, 'z-index' was used to set the order in which each element would be placed. */
+  #one {
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  #one img {
+    width: 70%;
+    height: auto;
+    transform: translate3d(0px, 0px, 0px)
+  }
+  
+  #two {
+    pointer-events: none;
+    z-index: 1;
+    transform: translate3d(-1px, -1px, 0px)
+  }
+
+  #two img {
+    width: 35%;
+    height: auto;
+  }
+
+
+/* Main contents styling */
+  #three {
+    /* The 'three' element is placed above the 'two' element and acts as a playlist. I adjusted the 'z-index', size, and position of the 'three' element so that it appears perfectly overlapping on the 'two' element. */
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: opacity 1s ease;
+    margin-bottom: 7%;
+    z-index: 2;
+}
+
+ /* Playlist slider styling */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1050px;
+  height: 600px;
+}
+
+.grid-item > * {
+    flex: 0 0 1500px;
+  }
+
+.items {
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  /* This is styling for the playlist slider, so allows horizontal scrolling and hides vertical scrolling, making it a horizontally scrollable slider. */
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; /* When scrolling horizontally, I set snap points so that elements snap to specific positions, making it easier to select LPs. */
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
+  transition: flex 0.3s;
+  /* The outer margin of the element was set to -260 pixels to overlap the elements, and the left outer margin of the element was set to 105 pixels to adjust the position. */
+  margin: -260px;
+  margin-left: 105px;
+  position: relative;
+}
+
+.item img {
+  width: 82%;
+  height: auto;
+  object-fit: contain;
+  flex: 1;
+}
+
+.items.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+/* Set central image size */
+.center-item {
+  flex: 0 0 40% !important;
+  z-index: 4;
+}
+
+/* Set the image to rotate 60 degrees when the user hovers over the center image, ensuring that this is the image the user wants to click when selecting music to play. */
+.center-item:hover img {
+ transform: rotate(60deg);
+  }
+
+/* Set size for non-center image */
+.item:not(.center-item) {
+ flex: 0 0 33.33%;
+}
+
+
+/* Music section styling */
+.new-image-container {
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s ease, transform 3s ease;
+    /* To solve an issue where buttons are obscured by images and cannot be clicked due to website layouts where image elements overlap. 
+    Prevent mouse events from being delivered to an element using 'pointer-events: none;'. */
+    pointer-events: none;
+  }
+  
+  .new-image {
+    width: 40%;
+  }
+  
+  .new-image-container.animate {
+    opacity: 1;
+    transform: translate(-10%, -60%) scale(3.15);
+    /* When user click on music to play in the playlist, I created an effect that appears on the screen by moving the image 10% to the left and 60% upward on the screen when it is added, and applying animation to scale the size by 3.15 times. */
+  }
+
+  /* LP player tonearm styling */
+  .new-image7 {
+    z-index: 2;
+    position: absolute;
+    top: -85%;
+    left: 40%;
+    width: 35%;
+    opacity: 0;
+    transition: opacity 4s ease, transform 5s ease; 
+    /* To solve an issue where buttons are obscured by images and cannot be clicked due to website layouts where image elements overlap. 
+    Prevent mouse events from being delivered to an element using 'pointer-events: none;'. */
+    pointer-events: none;
+  }
+  
+  .new-image7.animate {
+    opacity: 1;
+    transform: translate(-30%, 27%) scale(1);
+    /* Animation has been applied to the tonearm of the LP player so that it appears smoothly on the screen. */
+  }
+
+
+.rotate {
+    animation: spin 10s linear infinite;
+  }
+  /* I used keyframes to animate the LP as it looks like  playing. */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* progress bar styling */
+.progress-bar-container {
+    position: relative;
+    width: 41%;
+    margin-left: 53%;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #cccccc;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: var(--main-pb-bg-color);
+}
+
+  /* Music title styling */
+.song-title {
+    font-family: "Montserrat", sans-serif;
+    /* Since the stylish Rock Salt font was already used for the music title in the LP image, the easy-to-read Montserrat font was used for the music title text. */
+    font-optical-sizing: auto;
+    font-weight: bold; /* Bold font was used to emphasize the music title. */
+    font-style: normal;
+    font-size: 40px;
+    color: var(--text-color);
+    position: absolute;
+    top: 78%; 
+    left: 54%; 
+  }
+
+  /* Audio Controls Button styling */
+.audio-controls {
+    margin-left: 48%;
+}
+
+.audio-controls button {
+    background-color: var(--main-btn-bg-color);
+    border: none;
+    margin: 16.5px;
+    margin-left: 11%;
+    position: relative;
+    z-index: 99; 
+    /* To prevent the button from being can not pressed because it is obscured by image elements, I set the z-index to a high value. */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+
+/* Footer styling */
+footer {
+  font-family: "Montserrat", sans-serif;
+  /* Because the footer appears on every page, I used the simple Montserrat font to avoid visual interference with other elements. */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  position: fixed;
+  top: 93%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  text-align: center;
+  width: 100%;
+}

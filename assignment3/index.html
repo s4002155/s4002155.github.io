@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Introduction -->
+    <section>
+    <img src="IMG_3439.PNG" alt="Koala and Platypus title logo" width="96%">
+    
+    <h1>Introduction</h1>
+    <h2>
+        <p> This webpage is an "interactive storytelling website" where you can choose how your story unfolds.</p>
+        <p>Become the main character of the story by choosing the options provided as the story unfolds!</p>
+        <p>Please note that if you do not select an option, it will be automatically selected after 30 seconds.</p>
+    </h2>   
+    <h3>
+        <p>If you're ready to start the story, scroll and enjoy!!</p>
+    </h3>
+    <h4>
+        <p>* This story is a retelling of Aesop's fable, 'The Fox and the Stork'.</p>
+    </h4>
+    </section>
+    
+    <!-- Story part -->
+    <section>
+        <img src="IMG_3444.PNG" alt="Platypus" width="100%" class="img">
+        <img src="IMG_3463.PNG" alt="Platypus" width="100%">
+        <img src="IMG_3445.png" alt="Platypus" width="100%">
+        <img src="Koala and Platypus.png" alt="choose your character" id="character-page" width="100%">
+        <img src="IMG_3440.PNG" alt="Koala" class="koala" id="koala-img">
+        <img src="IMG_3441.PNG" alt="Platypus" class="platypus" id="platy-img">
+        <h5 id="stop">stop scroll</h5>
+        <img src="Koala.png" alt="Koala" width="100%" id="koala-page">
+        <button id="again" class="a option1 styled">Choose again</button>
+        <button id="choose" class="b option2 styled">Play with this character</button>
+        <div class="scroll">
+            <p class="Btn1">stop scroll</p>
+        </div>
+        <img src="Platypus.png" alt="Platypus" width="100%" id="platy-page">
+        <button id="again2" class="c option1 styled">Choose again</button>
+        <button id="choose2" class="d option2 styled">Play with this character</button>
+        <div class="scroll">
+            <p class="Btn2">stop scroll</p>
+        </div>
+    </section>
+
+    <!-- Koala part -->
+    <section>
+        <img src="plate.jpg" alt="Platypus" id="food-prepare" width="100%">
+        <button id="Eucalyptus" class="e option1 styled">Eucalyptus</button>
+        <button id="platy-food" class="f option2 styled">Freshwater crayfish</button>
+        <div class="scroll">
+            <p class="Btn3">stop scroll</p>
+        </div>
+        <!-- option 1: Eucalyptus -->
+        <div>
+        <img src="Eucalyptus.JPG" alt="Platypus" id="koala-food" width="100%">
+        <img src="IMG_34461.png" alt="Platypus" width="100%">
+        <img src="react.png" alt="Platypus" width="100%">
+        <button id="sorry" class="g option1 styled">"Sorry... I didn't know that"</button>
+        <button id="angry" class="h option2 styled">"I prepared hard, what do you mean?"</button>
+        <div class="scroll">
+            <p class="Btn4">stop scroll</p>
+        </div>
+        </div>
+        <!-- option 1a: Sorry -->
+        <div>
+        <img src="sorry.png" alt="Platypus" id="apologiz" width="100%">
+        <img src="IMG_3456.PNG" alt="Platypus" width="100%">
+        <img src="platypus and a koala.JPG" alt="Platypus" width="100%">
+        </div>
+        <!-- option 1b: Angry -->
+        <div>
+            <img src="angry.png" alt="Platypus" id="argue" width="100%">
+            <img src="IMG_3453.PNG" alt="Platypus" width="100%">
+        </div>
+
+        <!-- option 2: Platypus food -->
+        <div>
+            <img src="Freshwater crayfish.JPG" alt="Platypus" id="crayfish" width="100%">
+            <img src="thanks.png" alt="Platypus" width="100%">
+            <img src="react.png" alt="Platypus" width="100%">
+            <button id="frankly" class="i option1 styled">Frankly say that do not eat</button>
+            <button id="say" class="j option2 styled">Say nothing about food</button>
+            <div class="scroll">
+                <p class="Btn5">stop scroll</p>
+            </div>
+        </div>
+        <!-- option 2a: Frankly -->
+        <div>
+            <img src="actually.png" alt="Platypus" id="actually" width="100%">
+            <img src="promise.png" alt="Platypus" width="100%">
+            <img src="platypus and a koala.JPG" alt="Platypus" width="100%">
+        </div>
+        <!-- option 2b: Say nothing -->
+        <div>
+            <img src="fine.png" alt="Platypus" id="nothing" width="100%">
+            <img src="really.png" alt="Platypus" width="100%">
+            <img src="IMG_3460.PNG" alt="Platypus" width="100%">
+            <img src="oh.png" alt="Platypus" width="100%">
+            <img src="thought.png" alt="Platypus" width="100%">
+        </div>
+    </section>
+    <!-- Platypus part -->
+    <section>
+        <img src="q1.png" alt="Platypus" id="invitation" width="100%">
+        <button id="yes" class="k option1 styled">Yes</button>
+        <button id="no" class="l option2 styled">No</button>
+        <div class="scroll">
+            <p class="Btn6">stop scroll</p>
+        </div>
+        <!-- option 1: Yes -->
+        <div>
+            <img src="yes.png" alt="Platypus" id="wow" width="100%">
+            <img src="Eucalyptus.JPG" alt="Platypus" width="100%">
+            <img src="react2.png" alt="Platypus" width="100%">
+            <button id="excuse" class="m option1 styled">Excuse for not being able to eat it</button>
+            <button id="revenge" class="n option2 styled">Take revenge</button>
+            <div class="scroll">
+                <p class="Btn7">stop scroll</p>
+            </div>
+
+        </div>
+        <!-- option 1a: Excuse -->
+        <div>
+            <img src="explain.png" alt="Platypus" id="explain" width="100%">
+            <img src="sorry.png" alt="Platypus" width="100%">
+            <img src="platypus and a koala.JPG" alt="Platypus" width="100%">
+        </div>
+        <!-- option 1b: Revenge -->
+        <div>
+            <img src="revenge.png" alt="Platypus" id="what" width="100%">
+            <img src="IMG_3458.PNG" alt="Platypus" width="100%">
+            <img src="revenge2.png" alt="Platypus" width="100%">
+            <img src="hmm.png" alt="Platypus" width="100%">
+            <img src="IMG_3460.PNG" alt="Platypus" width="100%">
+            <img src="um.png" alt="Platypus" width="100%">
+            <img src="so what.png" alt="Platypus" width="100%">
+            <img src="IMG_3453.PNG" alt="Platypus" width="100%">
+        </div>
+        <!-- option 2: No -->
+        <div>
+            <img src="no.png" alt="Platypus" id="no-thanks" width="100%">
+            <img src="why.png" alt="Platypus" width="100%">
+            <img src="react2.png" alt="Platypus" width="100%">
+            <button id="blame" class="o option1">Say that I don't eat eucalyptus because it taste terrible</button>
+            <button id="alternative" class="p option2">Suggest that, since can't eat eucalyptus, should hang out together instead of eating.</button>
+            <div class="scroll">
+                <p class="Btn8">stop scroll</p>
+            </div>
+        </div>
+        <!-- option 2a: Blame -->
+        <div>
+            <img src="taste.png" alt="Platypus" id="taste-terrible" width="100%">
+            <img src="IMG_3453.PNG" alt="Platypus" width="100%">
+        </div>
+        <!-- option 2b: Alternative -->
+        <div>
+            <img src="play.png" alt="Platypus" id="hang-out" width="100%">
+            <img src="platypus and a koala.JPG" alt="Platypus" width="100%">
+        </div>
+    </section>
+</body>
+</html>

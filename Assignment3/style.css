@@ -1,0 +1,402 @@
+/* I converted the sketch I drew into an illustration using Adobe Firefly. 
+At this time, considering that it is a short fairy tale and a warm story that can teach a lesson, the images used an overall warm tone.
+Based on this, the color palette was extracted from the generated image and the following design choices were considered.  */
+
+ body {
+    background-color: #F9F9ED; 
+    /* Because various colors were used in the image, the background was balanced by using a color close to white. */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 7800px;
+  }
+ 
+/* Introduction Style */
+ /* For the intro title */
+ h1 {
+    /* This website uses two fonts.
+    “Fredoka” font was used for emphasized parts such as titles and headers.
+    This font is suitable for emphasis due to its simple and thick design, and the rounded font was thought to be suitable for expressing a warm fairy tale. */
+    font-family: "Fredoka", sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #FA662C;
+    /* The first point color was used for emphasis. */
+ }
+ 
+/* For the describtion text */
+ /* The second font used is “Open Sans”.
+ Although the story is being told through images, readability is a factor that cannot be ignored in the sense that it is a 'story'.
+ That's why I used Open Sans, an easy-to-read sans-serif font.
+ Also, since this font is a straight font similar to Fredoka, I thought it would look harmonious if paired together. */
+ h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 10px;
+    color: #533432;
+    /* To match the warm image and atmosphere, brown rather than black was used as the text color. */
+ }
+ 
+/* For the caution text */
+ h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: #533432;
+ }
+ /* I tried to organize the paragraphs in the caution section neatly and make them easier to read.
+ For this purpose, left align was used, and the line breaks were also identified and aligned to the left. */
+ p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-left: 30px;
+ }
+
+ li {
+    margin-top: 8px;
+ }
+
+/* For the text that announces the beginning */
+ h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+    color: #5CBAD3;
+    /* There is no need to emphasize it too much, but I used a second point color to mark the beginning. */
+ }
+ 
+/* For scroll control */
+ /* When trying to use scrolling and navigation together on one page, I used the scroll control function to prevent parts that should not be scrolled from scrolling.
+ In order to place text on an image(by using z-index and position:absolute) and pause scrolling when text is detected in the viewport, the text opacity was set to 0 and used for scroll control.
+ Detailed code for this can be found in the script. */
+ h5 {
+    position: absolute; 
+    font-size: 9px;
+    top: 65.7%;
+    opacity: 0;
+    z-index: 1;
+ }
+
+ /* For the ending text */
+ h6 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #F9F9ED;
+    margin-top: 50px;
+    /* background-color: #5CBAD3; */
+    background-color: rgba(92, 186, 211, .85);
+    padding: 324px;
+    z-index: 1;
+ }
+ 
+ /* Ending comment position adjustment */
+ .ending1 {
+    top: 29.73%
+ }
+
+ .ending2 {
+    top: 39.83%
+ }
+
+ .ending3 {
+    top: 69.74%
+ }
+
+ .ending4 {
+    top: 26.97%;
+ }
+
+ .ending5 {
+    top: 63.55%;
+ }
+
+ .ending6 {
+    top: 86.27%;
+ }
+
+ .ending7 {
+    top: 95.18%;
+ }
+
+ /* When reaching the ending of story, I used this style to indicate the ending by gradually adjusting the opacity. */
+.hidden {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+ 
+ /* css for function to control scrolling */
+ .scroll {
+    font-size: 20px;
+    opacity: 0;
+ }
+ 
+ .no-scroll {
+    overflow-y: hidden;
+ }
+ 
+ .Btn1 {
+    position: absolute;
+    z-index: 1;
+    top: 80.8%
+ }
+ 
+ 
+ .Btn2 {
+    position: absolute;
+    z-index: 1;
+    top: 99.4%
+ }
+ 
+ 
+ .Btn3 {
+    position: absolute;
+    z-index: 1;
+    top: 4.7%
+ }
+ 
+ 
+ .Btn4 {
+    position: absolute;
+    z-index: 1;
+    top: 19.8%
+ }
+ 
+ 
+ .Btn5 {
+    position: absolute;
+    z-index: 1;
+    top: 59.8%
+ }
+ 
+ 
+ .Btn6 {
+    position: absolute;
+    z-index: 1;
+    top: 2.3%
+ }
+ 
+ 
+ .Btn7 {
+    position: absolute;
+    z-index: 1;
+    top: 16.9%
+ }
+ 
+ 
+ .Btn8 {
+    position: absolute;
+    z-index: 1;
+    top: 81.48%
+ }
+ 
+ 
+ .img {
+    margin-top: 50px;
+ }
+ 
+ 
+ section {
+    position: relative;
+ }
+ 
+ 
+ /* To display a click event for the character to be selected on the character selection page, only the character image, excluding the background, was added.
+ This adds a hover style so that when you hover over a character to select, the character image grows larger, implicitly indicating character selection. */
+ .koala {
+    position: absolute;
+    width: 32%;
+    top: 58.6%;
+    left: 28%; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+ }
+ 
+ .koala:hover {
+    transform: scale(1.1) translate(-45%, -45%);
+ }
+ 
+ 
+ .platypus {
+    position: absolute; 
+    width: 33%;
+    top: 49.2%; 
+    left: 48.5%; 
+    transform: translate(20%, 20%); 
+    z-index: 1; 
+ }
+ 
+ .platypus:hover {
+    transform: scale(1.1) translate(20%, 18%);
+ }
+ 
+ 
+/* CSS for option button position */
+ .a, .b {
+    top: 81.7%;
+ }
+ 
+ .c, .d {
+    top: 98.3%
+ }
+ 
+ .e, .f {
+    top: 4.5%
+ }
+ 
+ .g, .h {
+    top: 19.5%
+ }
+ 
+ .i, .j {
+    top: 59.55%
+ }
+ 
+ .k, .l {
+    top: 4.1%;
+ }
+ 
+ .m, .n {
+    top: 17.7%;
+ }
+ 
+ .o, .p {
+    top: 81.2%;
+    width: 45%;
+    height: 64px;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    background-color: #F9F9ED;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ .o:hover, .p:hover {
+    background-color: #FA662C;
+    color: #F9F9ED;
+ }
+ 
+ .option1 {
+    left: 25%; 
+ }
+ 
+ .option2 {
+    left: 74.8%; 
+ }
+ 
+ 
+ /* Button style */
+ .styled {
+    width: 40%;
+    height: 50px;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    background-color: #F9F9ED;
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ /* In order to implicitly check whether the button was clicked, it was expressed through color change using hover. */
+ .styled:hover {
+    background-color: #FA662C;
+    color: #F9F9ED;
+ }
+ 
+
+  /* Return button style */
+ .return {
+    position: absolute; 
+    background-color: #F9F9ED;
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+    z-index: 3;
+    left: 20px;
+ }
+
+ .A {
+    top: 5.3%;
+ }
+
+ .B {
+    top: 45.3%;
+ }
+
+ .C {
+    top: 20.3%
+ }
+
+ .D {
+    top: 35.3%
+ }
+
+ .E {
+    top: 60.35%
+ }
+
+ .F {
+    top: 75.35%
+ }
+
+ .G {
+    top: 4.8%;
+ }
+
+ .H {
+    top: 68.45%;
+ }
+
+ .I {
+    top: 18.45%;
+ }
+
+ .J {
+    top: 32.05%;
+ }
+
+ .K {
+    top: 82.28%;
+ }
+
+ .L {
+    top: 91.2%;
+ }
+
+ .return:hover {
+    background-color: #5CBAD3;
+ }

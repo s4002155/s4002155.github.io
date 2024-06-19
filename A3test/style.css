@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+ }
+ 
+ 
+ body {
+    background-color: #F9F9ED;
+    overflow-y: scroll; /* Body에서만 세로 스크롤 허용 */
+    overflow-x: hidden; /* 가로 스크롤 숨김 */
+    scroll-snap-type: y mandatory; /* 세로 방향으로 스크롤 스냅 강제 적용 */
+    height: 7800px;
+  }
+ 
+ 
+ h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-top: 100px;
+    color: #FA662C;
+ }
+ 
+ 
+ h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ 
+ h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ 
+ h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-top: 170px;
+    color: #5CBAD3;
+ }
+ 
+ 
+ h5 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    font-size: 9px;
+    top: 65.7%;
+    opacity: 0;
+    z-index: 1;
+ }
+ 
+ 
+ /* 스크롤을 제어하는 기능에 대한 css */
+ .scroll {
+    font-size: 20px;
+    opacity: 0;
+ }
+ 
+ 
+ body.no-scroll {
+    overflow-y: hidden !important; /* 스크롤을 숨기는 CSS 설정 */
+ }
+ 
+ 
+ .Btn1 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 80.8%
+ }
+ 
+ 
+ .Btn2 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 99.4%
+ }
+ 
+ 
+ .Btn3 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 4.7%
+ }
+ 
+ 
+ .Btn4 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 19.8%
+ }
+ 
+ 
+ .Btn5 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 59.8%
+ }
+ 
+ 
+ .Btn6 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 2.3%
+ }
+ 
+ 
+ .Btn7 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 16.9%
+ }
+ 
+ 
+ .Btn8 {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    z-index: 1;
+    top: 81.48%
+ }
+ 
+ 
+ .img {
+    margin-top: 100px;
+ }
+ 
+ 
+ section {
+    position: relative; /* 부모 요소인 section을 relative로 설정합니다 */
+ }
+ 
+ 
+ .koala {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    width: 32%;
+    top: 58.6%; /* 원하는 위치로 조정합니다 */
+    left: 28%; /* 원하는 위치로 조정합니다 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위해 사용합니다 */
+    z-index: 1; /* 다른 이미지 위에 겹치도록 설정합니다 */
+ }
+ 
+ 
+ .koala:hover {
+    transform: scale(1.1) translate(-45%, -45%);
+ }
+ 
+ 
+ .platypus {
+    position: absolute; /* 절대 위치로 설정합니다 */
+    width: 33%;
+    top: 49.2%; /* 원하는 위치로 조정합니다 */
+    left: 48.5%; /* 원하는 위치로 조정합니다 */
+    transform: translate(20%, 20%); /* 중앙 정렬을 위해 사용합니다 */
+    z-index: 1; /* 다른 이미지 위에 겹치도록 설정합니다 */
+ 
+ 
+ }
+ 
+ 
+ .platypus:hover {
+    transform: scale(1.1) translate(20%, 18%);
+ }
+ 
+ 
+ /* 버튼 위치에 대한 CSS */
+ .a, .b {
+    top: 81.7%; /* 원하는 위치로 조정합니다 */
+ }
+ 
+ 
+ .c, .d {
+    top: 98.3%
+ }
+ 
+ 
+ .e, .f {
+    top: 4.5%
+ }
+ 
+ 
+ .g, .h {
+    top: 19.5%
+ }
+ 
+ 
+ .i, .j {
+    top: 59.55%
+ }
+ 
+ 
+ .k, .l {
+    top: 4.1%;
+ }
+ 
+ 
+ .m, .n {
+    top: 17.7%;
+ }
+ 
+ 
+ .o, .p {
+    top: 81.2%;
+    width: 45%;
+    height: 64px;
+    position: absolute; /* 절대 위치로 설정합니다 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위해 사용합니다 */
+    z-index: 2; /* 다른 이미지 위에 겹치도록 설정합니다 */
+    background-color: #F9F9ED;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ 
+ .o:hover, .p:hover {
+    background-color: #FA662C;
+    color: #F9F9ED;
+ }
+ 
+ 
+ .option1 {
+    left: 25%; /* 원하는 위치로 조정합니다 */
+ }
+ 
+ 
+ .option2 {
+    left: 74.8%; /* 원하는 위치로 조정합니다 */
+ }
+ 
+ 
+ /* 버튼 스타일 */
+ .styled {
+    width: 40%;
+    height: 50px;
+    position: absolute; /* 절대 위치로 설정합니다 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위해 사용합니다 */
+    z-index: 2; /* 다른 이미지 위에 겹치도록 설정합니다 */
+    background-color: #F9F9ED;
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    color: #533432;
+ }
+ 
+ 
+ .styled:hover {
+    background-color: #FA662C;
+    color: #F9F9ED;
+ }
+ 

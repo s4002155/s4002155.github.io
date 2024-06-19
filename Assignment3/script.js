@@ -62,8 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
  function navigateTo(image, pageId) {
     const targetElement = document.getElementById(pageId);
     targetElement.scrollIntoView({ behavior: 'auto', block: 'end' });
-    // If you look at the code to come, you can see that `block:' is different, and this is determined based on the optimized position of the part that appears on the screen for each image.
-   
+    // When I tried to use the scroll and navigate functions on one page, there was a problem that it seemed complicated when navigating.
+    // To solve this, we used behavior: 'auto' to make it appear as if we were moving directly to the relevant page.
+    // If you look at the code to come, you can see that `block:' is different, and this is determined based on the optimized position of the part that appears on the screen for each image. 
  }
  
  
